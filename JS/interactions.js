@@ -14,6 +14,7 @@ const illustration_header = document.querySelector('.illustration_header');
 const description_label = document.querySelector('.description_label');
 const main_text = document.querySelector('.main_text');
 const illustration = document.querySelector('.illustration');
+const Credit_btn = document.querySelector('.credit_btn');
 var style = getComputedStyle(document.body);
 var colors= {
     "NP" : [style.getPropertyValue('--normal-primary'),style.getPropertyValue('--normal-secondary')],
@@ -52,74 +53,76 @@ function needhelp(){
 }
 
 modelViewer.querySelectorAll('button').forEach((hotspot) => {
-    hotspot.addEventListener('click', () => annotationClicked(hotspot));
+    hotspot.addEventListener('click', () => {
+        annotationClicked(hotspot);
+        $('.description_label').show();
+        $('.credit_label').hide();
+        $('.jselect').hide();
+        $('.info_panel').animate({scrollTop:0}, 'fast');
+    });
   });
 // Add a click event listener to the button
 //if pressed on hotspot, change description, image, label
 Adenine.addEventListener('click', () => {
     // Print a message in the console
     change_color("AP");
-    $('.jselect').hide();
+    
     $('.adenine_text').show();
-    $('.info_panel').animate({scrollTop:0}, 'fast');
     //console.log('Show adenine information');
 });
 
 Uracil.addEventListener('click', () => {
     // Print a message in the console
     change_color("UP");
-    $('.jselect').hide();
+
     $('.uracil_text').show();
-    $('.info_panel').animate({scrollTop:0}, 'fast');
     //console.log('Show uracil information');
 });
 Guanine.addEventListener('click', () => {
     // Print a message in the console
     change_color("GP");
-    $('.jselect').hide();
     $('.guanine_text').show();
-    $('.info_panel').animate({scrollTop:0}, 'fast');
     //console.log('Show guanine information');
 });
 Cytosine.addEventListener('click', () => {
     // Print a message in the console
     change_color("CP");
-    $('.jselect').hide();
     $('.cytosine_text').show();
-    $('.info_panel').animate({scrollTop:0}, 'fast');
     //console.log('Show cytosine information');
 });
 RNA.addEventListener('click', () => {
     // Print a message in the console
     change_color("NP");
-    $('.jselect').hide();
     $('.rna_text').show();
-    $('.info_panel').animate({scrollTop:0}, 'fast');
     //console.log('Show rna information');
 });
 Nucleobases.addEventListener('click', () => {
     // Print a message in the console
     change_color("NP");
-    $('.jselect').hide();
     $('.nucleobases_text').show();
-    $('.info_panel').animate({scrollTop:0}, 'fast');
     ///console.log('Show nucleobases information');
 });
 Neclueotides.addEventListener('click', () => {
     // Print a message in the console
     change_color("NP");
-    $('.jselect').hide();
     $('.nucleotide_text').show();
-    $('.info_panel').animate({scrollTop:0}, 'fast');
     //console.log('Show nucleotides information');
 });
 
 Backbone.addEventListener('click', () => {
     // Print a message in the console
     change_color("NP");
-    $('.jselect').hide();
     $('.backbone_text').show();
-    $('.info_panel').animate({scrollTop:0}, 'fast');
     //console.log('Show backbone information');
 });
 
+Credit_btn.addEventListener('click', () => {
+    // Print a message in the console
+    change_color("NP");
+    $('.jselect').hide();
+    $('.description_label').hide();
+    $('.credit_label').css('display','flex');
+    $('.credit_text').show();
+    $('.info_panel').animate({scrollTop:0}, 'fast');
+    console.log('Show credit');
+});
