@@ -1,0 +1,243 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="CSS/styles.css">
+        <title>RNA Model</title>
+        <link rel="icon" type="image/x-icon" href="Images/icon.png">
+    </head>
+    <body>
+        <script src="JS/jquery-3.7.1.min.js"></script>
+        <script type="module" src="JS/model-viewer.min.js"></script>
+        
+    <div class="container_whole_page">
+        <div class="info_panel">
+            <div class="illustration">
+                <div class="illustration_header">
+                    <div class="header_text part ">
+                        <h2 class="adenine_text jselect">Adenine</h2>
+                        <h2 class="guanine_text jselect">Guanine</h2>
+                        <h2 class="cytosine_text jselect">Cytosine</h2>
+                        <h2 class="uracil_text jselect">Uracil</h2>
+                        <h2 class="backbone_text jselect">Sugar Phospate Backbone</h2>
+                        <h2 class="nucleobases_text jselect">Nucleobases</h2>
+                        <h2 class="nucleotide_text jselect">Nucleotides</h2>
+                        <h2 class="rna_text jselect">Ribonucleic acid</h2>
+                  <!--Make both header and abbriv text color match that of the rna structure-->
+                    </div>
+                    <div class="header_text abr ">
+                        <h2 class="adenine_text jselect">A</h2>
+                        <h2 class="guanine_text jselect">G</h2>
+                        <h2 class="cytosine_text jselect">C</h2>   
+                        <h2 class="uracil_text jselect">U</h2>
+                        <h2 class="backbone_text jselect">SP</h2>
+                        <h2 class="rna_text jselect">RNA</h2>
+                    </div>
+                </div>
+                <div class="illustration_image ">
+                    <div class="adenine_text jselect">
+                    <img src="Images/Adenine.png" class="label_image" alt="Label_Image">
+                    </div>
+                    <div class="uracil_text jselect">
+                    <img src="Images/Uracil.png" class="label_image" alt="Label_Image">
+                    </div>
+                    <div class="guanine_text jselect">
+                    <img src="Images/Guanine.png" class="label_image" alt="Label_Image">
+                    </div>
+                    <div class="cytosine_text jselect">
+                    <img src="Images/Cytosine.png" class="label_image" alt="Label_Image">
+                    </div>
+                    <div class="backbone_text jselect">
+                    <img src="Images/sugar_phosphate_backbone.png" class="label_image" alt="Label_Image">
+                    </div>
+                    <div class="nucleotide_text jselect">
+                    <img src="Images/nucleotide.png" class="label_image" alt="Label_Image">
+                    </div>
+                    <div class="rna_text jselect">
+                    <img src="Images/RNA.jpg" class="label_image" alt="Label_Image">
+                    </div>
+                    <div class="nucleobases_text jselect">
+                        <img src="Images/Nucleobases.png" class="label_image" alt="Label_Image">
+                        </div>                                                            
+                </div>
+            </div>
+            <div class="description_label"><h2>Description</h2></div>
+            <div class="description ">
+                <div class="main_text">
+                    <div class="rna_text jselect">
+                        <p>RNA is a ribonucleic acid that helps in the synthesis of proteins in our body. This nucleic acid is responsible for the production of new cells in the human body. It is usually obtained from the DNA molecule. RNA resembles the same as that of DNA, the only difference being that it has a single strand unlike the DNA which has two strands and it consists of an only single ribose sugar molecule in it. Hence is the name Ribonucleic acid. RNA is also referred to as an enzyme as it helps in the process of chemical reactions in the body.
+                        </p><h3>Composition of RNA
+                        </h1><p>  - RNA is composed of nucleotides attached by 5'-3' phosphodiester bonds between ribose sugars. 
+                        </p><p>
+                        </p><p>   - RNA contains a ribose sugar as the sugar component of its nucleotides. Ribose is a 5-carbon sugar that differentiates RNA from DNA, which contains deoxyribose. The presence of a hydroxyl group (-OH) at the 2' carbon in ribose makes RNA more reactive and less stable than DNA. This ribose sugar forms the backbone of the RNA molecule.
+                        </p><p>
+                        </p><p>   - RNA molecules consist of phosphate groups, which are covalently bonded to the ribose sugar. These phosphate groups link the nucleotides together via phosphodiester bonds, forming the sugar-phosphate backbone of RNA. The phosphate groups provide stability to the RNA molecule and play a crucial role in RNA's structure and function.
+                        </p><p>
+                        </p><p>   - The nucleotide bases consist of adenine, guanine, cytosine, and uracil. Two hydrogen bonds form between adenine and uracil, while three bonds form between cytosine and guanine.
+                        </p>
+                    </div>
+                    <div class="adenine_text jselect">
+                        <p>Adenine, a purine nucleobase, possesses an amine group connected to the carbon at position 6. Adenine (A) constitutes one of the four chemical bases within DNA (paired with T). It consists of carbon, nitrogen, and hydrogen atoms. When adenine or similar bases bind to ribose and phosphate, they form nucleotides. Purines are characterized by a nitrogen ring with six members fused to another nitrogen ring with five members. Within the nucleotide structure, adenine forms a covalent bond with the ribose sugar in RNA and hydrogen bonds with the neighboring nucleobase, or uracil.</p>
+                        <p>Additionally, adenine contributes to the formation of various compounds such as vitamin B12, adenosine triphosphate (ATP), nicotinamide adenine dinucleotide (NAD), and flavin adenine dinucleotide (FAD).</p>
+                    </div>
+                    <div class="uracil_text jselect">
+                        <p>Uracil (U) stands as one of the four nucleotide bases in RNA, categorized as a pyrimidine nucleobase. In RNA, uracil forms base pairs with adenine. However, in DNA, the nucleotide thymine (T) substitutes uracil.
+                        </p><p>The absence of uracil in DNA and its presence in RNA contribute significantly to RNA's susceptibility to degradation. This characteristic enables the cell to dynamically regulate gene expression, as older RNA molecules degrade relatively quickly, allowing for the turnover of genetic information.
+                        </p>
+                    </div>
+                    <div class="guanine_text jselect">
+                        <p>Guanine, an organic compound belonging to the purine group, a class of compounds with a characteristic two-ringed structure, composed of carbon and nitrogen atoms, and occurring free or combined in such diverse natural sources as guano (the accumulated excrement and dead bodies of birds, bats, and seals), sugar beets, yeast, and fish scales. It is a component of nucleic acids, the cell constituents that store and transmit hereditary traits.
+                        </p>
+                    </div>
+                    <div class="cytosine_text jselect">
+                        <p>Cytosine, a nitrogenous base derived from pyrimidine, possesses an amino group at the C4 position. Its notable feature is its ability to form triple hydrogen bonds with guanine, a crucial aspect of base pairing in nucleic acids. This interaction plays a fundamental role in constructing the genetic code present in both DNA and RNA molecules. Due to its chemical properties and its capacity to bond with guanine, cytosine functions as a key nucleotide base. It contributes to the formation of the sugar-phosphate backbone in the structure of DNA and RNA, facilitating the transmission and expression of genetic information.
+                        </p>
+                    </div>
+                    <div class="backbone_text jselect">
+                       <p>The sugar-phosphate backbone forms the structural framework of RNA. It is made up of alternating sugar and phosphate groups. In RNA, the sugar component is called ribose. The phosphate groups are attached to the 5' carbon of the ribose sugar moiety.
+                    </p><h3>Phosphate Groups
+                    </h3><p>Phosphate groups are an integral part of the RNA structure. They are covalently bonded to the sugar molecules in the backbone. These phosphate groups play a crucial role in the stability and function of RNA.
+                    </p><h3>Ribose
+                    </h3><p>Ribose is a type of pentose sugar, it has five carbon atoms arranged in a single ring structure. In RNA, the carbon atoms are numbered in a clockwise direction. Contrasting with the ribose found in RNA, the deoxyribose sugar in DNA lacks a hydroxyl (-OH) group on the 2' carbon. It's categorized as a simple sugar.
+                    </p><p>Functions of Sugar-Phosphate Backbone in RNA
+                    </p><h3>- Structural Support
+                    </h3><p>The alternating sugar and phosphate groups form a continuous chain, creating a stable backbone for the RNA molecule.
+
+                    </p><h3>- Maintaining Shape
+                    </h3><p>The backbone helps maintain the overall shape of RNA, allowing it to fold into specific structures required for its various functions.
+
+                    </p><h3>- Protecting Genetic Information 
+                    </h3><p>The phosphate groups shield the nitrogenous bases, protecting the genetic information encoded in the RNA molecule from external factors.
+
+                    </div>
+                    <div class="nucleotide_text jselect">
+                        <p>Nucleotides are the building blocks of RNA. Each nucleotide consists of three main components:
+
+                        </p><h3>A. Nitrogenous Base
+                        </h3><p>The nitrogenous base is one of the key components of a nucleotide. 
+                        </p><p>- Adenine (A): Adenine pairs with uracil (U) during RNA synthesis.
+                        </p><p>- Uracil (U): Uracil is specific to RNA and replaces thymine found in DNA.
+                        </p><p>- Guanine (G): Guanine pairs with cytosine (C) during RNA synthesis.
+                        </p><p>- Cytosine (C): Cytosine pairs with guanine (G) during RNA synthesis.
+                        </p>
+
+                        <h3>B. Ribose Sugar
+                        </h3><p>The sugar component of RNA nucleotides is called ribose. Ribose is a 5-carbon sugar that differentiates RNA from DNA, which contains deoxyribose. The presence of the hydroxyl group at the 2' carbon in ribose makes RNA more reactive and less stable than DNA.
+                        </p>    
+                        <h3>C. Phosphate Group
+                        </h3><p>RNA nucleotides contain at least one phosphate group. The phosphate groups link adjacent nucleotides in the sugar-phosphate backbone, forming a continuous chain.
+                        </p>
+
+                        <h3>Functions of Nucleotide in RNA
+                        </h3>
+                    <h3>- Genetic Information Storage. 
+                    </h3><p>   Each nucleotide carries and helps transmit genetic information. The sequence of nucleotides in RNA determines the genetic code, which is crucial for protein synthesis and gene expression.
+                        </p>
+                    <h3>- Base Pairing and Complementarity
+                    </h3><p>   The nitrogenous bases in nucleotides enable base pairing and complementarity, allowing RNA to form specific secondary structures such as hairpins, loops, and stems. This base pairing is essential for RNA's ability to interact with other molecules and perform its functions.
+                        </p>
+                    <h3> - Enzymatic Reactions
+                    </h3><p>   Nucleotides participate in enzymatic reactions within the cell. They can act as cofactors for enzymes, providing the necessary chemical groups for catalysis and facilitating various metabolic processes.
+                        </p>
+                     <h3>   - Cellular Signaling
+                    </h3><p>  Certain nucleotides, such as cyclic adenosine monophosphate (cAMP), cyclic guanosine monophosphate (cGMP), and adenosine triphosphate (ATP), have signaling roles within the cell. They act as second messengers, transmitting signals from the cell surface to the nucleus and regulating cellular processes.
+                    </p>
+                    <h3>    - Energy Storage and Transfer
+                    </h3><p>Adenosine triphosphate (ATP) is a nucleotide that serves as the primary energy currency in the cell. It stores and transfers energy for various cellular processes, including muscle contraction, active transport, and biosynthesis.
+                    </p>
+                    </div>
+                    <div class="nucleobases_text jselect">
+                        <p>Nucleobases are the building blocks of nucleic acids, which include RNA. They are organic molecules that form the genetic code, determining the sequence of amino acids in proteins and thereby influencing the structure and function of living organisms.
+                        </p>
+                        <p>There are four main types of nucleobases:
+                        </p>
+                        <p><b>Adenine (A)</b></p>
+                        <p><b>Uracil (U) in RNA</b></p>
+                        <p><b>Guanine (G)</b></p>
+                        <p><b>Cytosine (C)</b></p>
+
+                        <p>In RNA, Adenine still pairs with Uracil instead of Thymine, but the pairing mechanism remains the same. Adenine and Uracil form a base pair held together by two hydrogen bonds. Similarly, Guanine pairs with Cytosine in RNA, with three hydrogen bonds between them. The folding patterns of RNA molecules, are crucial for their biological functions.
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="container_model">
+            <model-viewer id="dimension-show" src="Model/rna_modified.glb" camera-controls touch-action="pan-y" tone-mapping="neutral" interaction-prompt="none" poster="poster.webp" shadow-intensity="1" interpolation-decay="100" min-camera-orbit="auto auto 5%" min-field-of-view="12deg" max-field-of-view="30deg" >
+                <button class="Hotspot" slot="hotspot-1" 
+                data-position="0.009633191315494116m 8.767856131612959m -0.027949913552479444m" 
+                data-normal="0.13080847053848813m 0.29356373094948907m 0.9469474536141894m" 
+                data-orbit="1.3166836222299179rad 1.4319838707424994rad 7.598848394569233m" 
+                data-target="0.19862226974785724m 8.79187785493198m -0.2366248856760027m"
+                data-visibility-attribute="visible">
+                    <div class="HotspotAnnotation">Adenine</div>
+                </button><button class="Hotspot" slot="hotspot-2" 
+                data-position="-0.021886826394467818m 6.805019295237202m 0.08070488366050732m" 
+                data-normal="-0.468252689725777m -0.6113471961249155m -0.637960832931599m" 
+                data-orbit="5.194389234950998rad 1.2800588374082775rad 4.04123708034482m" 
+                data-target="0.11352424874886946m 6.870340004283186m 0.4228499801697012m"
+                data-visibility-attribute="visible">
+                    <div class="HotspotAnnotation">Uracil</div>
+                </button><button class="Hotspot" slot="hotspot-3" 
+                data-position="-0.0686846653454154m 4.938340732359599m -0.03548353051054143m" 
+                data-normal="0.4195772303582192m -0.7221071169902488m -0.5500147810349801m" 
+                data-orbit="2.7129470238253823rad 1.3958112437581607rad 4.041237080344823m" 
+                data-target="-0.3470380319905102m 5.032992890024491m -0.22121941249011634m"
+                data-visibility-attribute="visible">
+                    <div class="HotspotAnnotation">Guanine</div>
+                </button><button class="Hotspot" slot="hotspot-4" 
+                data-position="0.03246217574355682m 3.7429436517328147m -0.026615532467126002m" 
+                data-normal="0.10542047030666075m -0.0853496800598064m 0.9907582735228665m" 
+                data-orbit="1.5409539095328169rad 1.4464529215362343rad 4.04123708034482m" 
+                data-target="0.19521943393780816m 3.6945434426739308m -0.5328611700966527m"
+                data-visibility-attribute="visible">
+                    <div class="HotspotAnnotation">Cytosine</div>
+                </button><button class="Hotspot" slot="hotspot-5" 
+                data-position="-0.8444965260919393m 9.998941785660294m -0.10211997858163713m" 
+                data-normal="-0.5052903795745736m 0.04399797443850898m 0.8618270189282139m" 
+                data-orbit="0.08100752776081852rad 1.3089969389957472rad 21.43861773412366m" 
+                data-target="-0.01855921745300293m 4.992298431694508m 0.01073521375656128m" 
+                data-visibility-attribute="visible">
+                    <div class="HotspotAnnotation">RNA</div>
+                </button><button class="Hotspot" slot="hotspot-6" 
+                data-position="-0.06196498532743888m 1.8648725730686802m 0.1133191337839945m" 
+                data-normal="-0.8148392099171132m -0.49790466005978035m 0.2968636243671651m" 
+                data-orbit="-1.0562407079426834rad 1.6128470056641908rad 7.50117941523343m" 
+                data-target="0.23380485991464184m 1.8465053715853645m 0.562538475240972m"
+                data-visibility-attribute="visible">
+                    <div class="HotspotAnnotation">Nucleobases</div>
+                </button><button class="Hotspot" slot="hotspot-9" 
+                data-position="-0.06131869302579229m 0.6336990425646802m 0.045390340896759085m" 
+                data-normal="-0.3015277972219744m 0.03145235565024879m -0.9529384748379688m" 
+                data-orbit="-2.28611002541019rad 1.6200815310610586rad 4.041237080344825m" 
+                data-target="-0.5725948215664722m 0.628965151263422m 0.2708987555265754m"
+                data-visibility-attribute="visible">
+                    <div class="HotspotAnnotation">Nucleotide</div>
+                </button><button class="Hotspot" slot="hotspot-10" 
+                data-position="1.0942510012073896m 7.72507857508494m -0.022224299002588488m" 
+                data-normal="0.8475794546764909m -0.5299121792481793m -0.028322257938725875m" 
+                data-orbit="2.069074263504156rad 1.8515863437608255rad 7.598848394569238m" 
+                data-target="1.084484535920824m 7.573968245227155m 0.18218446544453926m" 
+                 data-visibility-attribute="visible">
+                    <div class="HotspotAnnotation">Sugar-phosphate backbone</div>
+                </button>
+                <button disabled class="Hotspot" slot="hotspot-11" data-position="-0.7855294732755169m 9.64674984405039m -0.740037860349501m" data-normal="-0.4692800988906646m -0.34554304353332194m -0.8126353387903438m" data-visibility-attribute="visible">
+                    <div class="HotspotAnnotation">5'</div>
+                </button>
+                </button><button disabled class="Hotspot" slot="hotspot-13" data-position="-1.0333083922013522m 0.3002001987488434m 0.38826170648700326m" data-normal="-0.8980543874181655m -0.09554356502605368m 0.42938298105665035m" data-visibility-attribute="visible">
+                    <div disabled class="HotspotAnnotation">3'</div>
+                </button>
+                <div class="progress-bar hide" slot="progress-bar">
+                    <div class="update-bar"></div>
+                </div>
+            
+            </model-viewer>
+        </div>
+        
+    </div>
+    <div class="footer">
+        By: BS Biology 2-A Group 6
+    </div>
+    <script src="JS/interactions.js"></script>
+    </body>
+</html>

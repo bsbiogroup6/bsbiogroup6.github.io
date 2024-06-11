@@ -1,0 +1,196 @@
+/* VARIABLES */
+
+:root {
+    --normal-primary: white;
+    --normal-secondary: black;
+    --adenine-primary: white;
+    --adenine-secondary:black;
+    --uracil-primary:white;
+    --uracil-secondary:black;
+    --guanine-primary:white;
+    --guanine-secondary:black;
+    --cytosine-primary:white;
+    --cytosine-secondary:black;
+    --text-color: black;
+}
+body{
+    font-family: Roboto, Helvetica Neue, sans-serif; 
+    /* background-image: url("../Images/BG_HD/26807.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover; */
+}
+.bordered {
+    border: 1px solid black;
+    
+}
+.container_whole_page {
+    display: flex;
+    min-height: 90vh;
+    max-height: 90vh;
+    border: 3px solid black;
+    border-radius: 10px;
+}
+.info_panel {
+    flex: 1;
+    max-height: 900px;
+    overflow: auto;
+    border-radius: 10px 0px 0px 10px;
+    background-color: white;
+}
+.container_model {
+    flex: 2;
+    background-color: white;
+    border-radius: 0px 10px 10px 0px;
+}
+.illustration {
+    display: flex;
+    flex:1;
+    flex-direction: column;       
+    /* border-bottom: 1px solid; */
+    /* border-color: var(--normal-primary); */
+    background-color: white;
+
+}
+.illustration_header{
+    background-color: var(--normal-primary);
+    border: 3px solid black;
+    margin-top: 10px;
+    margin-left: 40px;
+    margin-right: 40px;
+    border-radius: 10px;
+    /* COLORS for PARTS
+        Adenine:#ed5992
+        Uracil: #ff8803
+        Guanine:rgb(209, 226, 22)
+        Cytosine:#4dbc2c
+        normal: 00b7ff
+
+    */
+}
+.header_text {
+color: var(--text-color);
+}
+
+.description {
+    display: flex;
+    flex:1;
+    flex-direction: column;
+
+    align-items: center;
+    padding-bottom: 10px;
+    background-color: white;
+    min-height: 100%;
+    
+}
+.description_label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid ;
+    border-color: black;
+    background-color: var(--normal-primary);
+    color: var(--text-color);
+    margin: 0px 40px 0px 40px;
+    border-radius: 10px;;
+}
+
+.main_text {
+    padding:30px;
+    margin: 30px;
+    min-height: 0;
+    max-height: 100%;
+    background-color: var(--normal-primary);
+    border: 3px solid;
+    border-color: var(--normal-secondary);
+    color: var(--text-color);
+
+    border-radius: 10px;
+    /* COLORS FOR PARTS
+        Normal:
+    */
+}
+
+.illustration_header {
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+.illustration_image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+.label_image {
+    min-height: 250px;
+    max-height: 250px;
+}
+model-viewer {
+    width: 100%;
+    height: 100%;
+}
+.part {
+    flex:2;
+}
+.abr {
+    flex:1;
+}
+/* default hidden upon initial opening of the page */
+.jselect {
+    display: none;
+}
+.adenine_text{
+    display: none;
+}
+.cytosine_text{
+    display: none;
+}
+.guanine_text{
+    display: none;
+}
+.uracil_text{
+    display: none;
+}
+.backbone_text{
+    display: none;
+}
+.nucleotide_text{
+    display: none;
+}
+.nucleobases_text{
+    display: none;
+}
+.rna_text{
+    display: block;
+}
+
+.hotspot{
+    background: #fff;
+    border-radius: 4px;
+    border: none;
+    box-sizing: border-box;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+    color: rgba(0, 0, 0, 0.8);
+    display: block;
+    font-family: Futura, Helvetica Neue, sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    max-width: 128px;
+    overflow-wrap: break-word;
+    padding: 0.5em 1em;
+    position: absolute;
+    width: max-content;
+    height: max-content;
+    transform: translate3d(-50%, -50%, 0);
+}
+.footer{
+    margin-top: 10px;
+    border-radius: 4px;
+    min-height: 4vh;
+    max-height: 4vh;
+    padding-left: 60px;
+    padding-top: 15px;
+    background-color: white;
+    border: 3px solid black;
+}
