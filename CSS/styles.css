@@ -98,6 +98,8 @@ color: white;
     margin: 30px;
     min-height: 0;
     max-height: 100%;
+    min-width: 80%;
+    max-width: 80%;
     background-color: var(--normal-primary);
     border: 3px solid;
     border-color: var(--normal-secondary);
@@ -162,7 +164,41 @@ model-viewer {
 .rna_text{
     display: block;
 }
+.credit_text{
+    display: none;
+    font-size: 24px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
 
+}
+
+.credit_image{
+    max-width: 300px;
+}
+.credit_label{
+    display: none;
+
+}
+.credit_btn{
+    background: #fff;
+    border-radius: 5px;
+    margin-right: 10px;
+    font-weight: 700;
+    font-size: 15px;
+    cursor: pointer;
+
+}
+.credit_profile{
+    margin: 20px;
+    padding: none;
+    border: 1px solid black;
+    border-radius: 10px 10px 0px 0px;
+    background: #00a1e0;
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+}
 .hotspot{
     background: #fff;
     border-radius: 4px;
@@ -191,4 +227,12 @@ model-viewer {
     padding-top: 15px;
     background-color: white;
     border: 3px solid black;
+}
+
+.btnlabel{
+
+    padding: none;
+    color: black;
+    font-size: 18px;
+    font-weight: 1500;
 }
