@@ -174,7 +174,7 @@ model-viewer {
 }
 
 .credit_image{
-    max-width: 300px;
+    max-width: 100%;
 }
 .credit_label{
     display: none;
